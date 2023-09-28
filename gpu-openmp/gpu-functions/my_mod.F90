@@ -7,6 +7,7 @@ module my_module
     ! TODO add declaration for target usage
 
     real(rk) function my_sum(a, b)
+    !$omp declare target my_sum(a, b)
       implicit none
       real(rk) :: a, b
 
